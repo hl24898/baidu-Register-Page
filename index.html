@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>注册百度账号</title>
+		<link type="text/css" rel="stylesheet" href="css/passport.css"
+	</head>
+	<body>
+	<div id="page-content">		
+		<div id="logo">
+			<img src="img/baidu.png"/>
+		</div>
+		<div id="mid-text">
+			<h3>用科技</h3>
+			<p>让复杂的世界更简单</p>
+		</div>
+		<div id="reg-content">
+			<div class="reg-login">
+				<h3>欢迎注册</h3>
+				<p>已有帐号？<span id="login_btn">登录</span></p>
+			</div>
+			<div class="reg-input" id="reg-input">
+				<form id="reg-from" class="reg-from" method="post" autocomplete="off" action="">
+					<p id="line-username" class="line-p">
+						<label for="reg-userName" class="label-input">用户名</label>
+						<input type="text" name="reg-userName" id="reg-userName" placeholder="请设置用户名" class="reg-text"/>
+						<span id="userNameTip">
+							<span id="userNameTipText">
+								设置后不可更改，中英文均可，最长14个英文或7个汉字
+							</span>
+						</span>
+						<span id="userNameError" class="errortext"></span>
+						<span id="userNameCorrectIcon" class="correctIcon"></span>
+					</p>
+					<p id="line-phone" class="line-p">
+						<label for="reg-phone" class="label-input">手机号</label>
+						<input type="text" name="reg-phone" id="reg-phone" placeholder="可用于登录和找回密码" class="reg-text" maxlength="11"/>
+						<span id="phoneError" class="errortext"></span>
+						<span id="phoneCorrectIcon"  class="correctIcon"></span>
+					</p>
+					<p id="line-password" class="line-p">
+						<label for="reg-password" class="label-input">密　码</label>
+						<input type="password" name="reg-password" id="reg-password" placeholder="请设置登录密码" class="reg-text"/>
+						<span id="passwordTip">
+							<span id="passwordTipText">
+								<span class="pwdErrorIcon" id="pwdErrorIcon1"></span><span class="pwdErrorText" id="pwdErrorText1">长度为8~14个字符</span><br>
+								<span class="pwdErrorIcon" id="pwdErrorIcon2"></span><span class="pwdErrorText" id="pwdErrorText2">字母/数字以及标点符号至少包含2种</span><br>
+								<span class="pwdErrorIcon" id="pwdErrorIcon3"></span><span class="pwdErrorText" id="pwdErrorText3">不允许有空格、中文</span><br>
+							</span>
+						</span>	
+						<span id="passwordError" class="errortext">密码设置不符合要求</span>
+						<span id="passwordChangeType"></span>
+						<span id="passwordTipIcon"></span>
+						<span id="pwdCorrectIcon" class="correctIcon"></span>
+					</p>
+					<p id="line-verifyCode" class="line-p">
+						<label for="reg-verifyCode" class="label-input">验证码</label>
+						<input type="text" name="reg-verifyCode" id="reg-verifyCode" placeholder="请输入验证码" disabled="disabled" class="reg-text" style="background: darkgray;"/>
+					</p>
+					<p id="line-submit">
+						<input type="submit" name="reg-submit" id="reg-submit" value="注册" />
+					</p>
+					<p id="line-agreement">
+						<input type="checkbox" name="agreement-check" id="agreement-check" /><label for="agreement-check" id="line-agreement-label">阅读并接受</label><a href="http://passport.baidu.com/static/passpc-account/html/protocal.html">《百度用户协议》</a>及<a href="https://passport.baidu.com/static/passpc-account/html/personal_protocal.html">《百度隐私权保护声明》</a>
+						<span id="checkError">请勾选“阅读并接受百度用户协议”</span>
+					</p>
+				</form>
+			</div>
+		</div>
+		<div id="footer">
+			<span class="help">
+				<a class="help-text" href="https://passport.baidu.com/v2/?ucenterfeedback#reg" target="_blank">帮助中心</a>
+				<div class="line"></div>
+				<a class="service" href="https://zhiqiu.baidu.com/imcswebchat/pc/index.html?id=48721&token=1nnbs7op4ocsr68143oamrjq9c4eoin2&domainID=pass&type=2"></a>
+			</span>
+			<span class="copyright">2021&nbsp;&copy;Baidu</span>
+		</div>
+	</div>
+	</body> 
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js" ></script>
+	<script src="js/passport.js" type="text/javascript"></script>
+</html>
